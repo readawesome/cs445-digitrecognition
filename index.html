@@ -12,7 +12,7 @@
 </head>
 <body>
   <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">WCS Code Ada 2020</a>
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">CS 445 Digit Recognition Project</a>
       <!-- <ul class="right hide-on-med-and-down">
         <li><a href="#">Navbar Link</a></li>
       </ul>
@@ -26,17 +26,21 @@
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <br><br>
-      <h1 class="header center orange-text">Welcome to <br>Political Tweets Classifier</h1>
+      <h1 class="header center orange-text">Welcome to <br>our CS 445 final project</h1>
       <div class="row center">
-        <h5 class="header col s12 light">This is a platform that educates voters on different candidates, and their stances
-          on popular policies. 
+        <h5 class="header col s12 light"> We are presenting our results for handwritten digit recognition through three different optimization alogorithms here.
           <br>
-          These are then represented in a line plot for voters to understand the policies that are emphasized by 
-          different political figures prior to the upcoming 2020 presidential election. The goal of this classifier is to inform 
-          users about the goals and priorities in relation to public policy of the political candidates.</h5>
+          The three optimizers that we are using here are gradient descent (GD), stochastic gradient descent (SGD), and adaptive moment estimation (ADAM). 
+          Gradient Descent is the most common optimization algorithm in machine learning and deep learning. It is a first-order optimization algorithm. This means it only takes into account the first derivative when performing the updates on the parameters. On each iteration, we update the parameters in the opposite direction of the gradient of the objective function J(w) w.r.t the parameters where the gradient gives the direction of the steepest ascent. The size of the step we take on each iteration to reach the local minimum is determined by the learning rate α. Therefore, we follow the direction of the slope downhill until we reach a local minimum.
+          Instead of going through all examples, Stochastic Gradient Descent (SGD) performs the parameters update on each example (x^i,y^i). Therefore, learning happens on every example.
+          Adam optimization is an extension to Stochastic gradient decent and can be used in place of classical stochastic gradient descent to update network weights more efficiently.
+
+        
+        </h5>
+          
       </div>
       <div class="row center">
-        <a href="file:///C:/Users/simde/Desktop/codeada/starter-template/starter-template/classifier.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
+        <a href="classifier.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
       </div>
       <br><br>
 
