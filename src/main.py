@@ -134,8 +134,14 @@ def infer(model: Model, fn_img: Path) -> None:
     batch = Batch([img], None, 1)
     recognized, probability = model.infer_batch(batch, True)
     print(f'Recognized: "{recognized[0]}"')
+    fin_val = f'Recognized: "{recognized[0]}"'
     print(f'Probability: {probability[0]}')
+    prob = f'Probability: {probability[0]}'
 
+
+    res = f"""<b>Result:</b> {fin_val}<br>
+            <b>Probability:</b> {prob}<br>"""
+    put_html(res)
 
 def main():
 
@@ -149,7 +155,7 @@ def main():
         file.write(img['content'])
         input_img = img['content']
 
-    print(img)
+
     put_image(img['content'])
 
 
